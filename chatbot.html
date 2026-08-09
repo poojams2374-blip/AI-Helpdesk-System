@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+
+        <h2>AI Helpdesk</h2>
+
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="raise-ticket.html">🎫 Raise Ticket</a></li>
+            <li><a href="mytickets.html">📋 My Tickets</a></li>
+            <li><a href="chatbot.html">🤖 AI Chatbot</a></li>
+            <li><a href="login.html">🚪 Logout</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="navbar">
+            <h2>AI Assistant</h2>
+            <p>Ask Anything</p>
+        </div>
+
+        <div class="card">
+
+            <textarea
+                id="question"
+                rows="6"
+                placeholder="Describe your issue..."
+                style="width:100%; padding:10px; font-size:16px;"></textarea>
+
+            <br><br>
+
+            <button id="askAI">Ask AI</button>
+
+            <br><br>
+
+            <div id="answer"
+                 style="white-space: pre-wrap;
+                        padding:15px;
+                        border:1px solid #ddd;
+                        border-radius:8px;
+                        min-height:120px;
+                        background:#f8f8f8;">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="chatbot.js"></script>
+
+</body>
+
+</html>

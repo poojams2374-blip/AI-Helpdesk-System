@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel - AI Helpdesk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+            <h2>Admin Panel</h2>
+
+            
+            <ul>
+
+                <li>
+                   <a href="admin.html">📋 All Tickets</a>
+               </li>
+
+               <li>
+                  <a href="index.html">🚪 Logout</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-content">
+
+            <div class="navbar">
+
+                <h2>Manage Tickets</h2>
+
+                <p>Admin</p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search tickets by title..."
+            >
+
+
+            <div class="admin-filters">
+
+                <!-- STATUS -->
+
+                <select id="statusFilter">
+
+                    <option value="All">
+                        All Status
+                    </option>
+
+                    <option value="Open">
+                        Open
+                    </option>
+
+                    <option value="Resolved">
+                        Resolved
+                    </option>
+
+                </select>
+
+
+                <!-- CATEGORY -->
+
+                <select id="categoryFilter">
+
+                    <option value="All">
+                        All Categories
+                    </option>
+
+                    <option value="Account/Access">
+                        Account/Access
+                    </option>
+
+                    <option value="Software">
+                        Software
+                    </option>
+
+                    <option value="Hardware">
+                        Hardware
+                    </option>
+
+                    <option value="Network">
+                        Network
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- TICKETS -->
+
+            <div id="adminTicketList"></div>
+
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>

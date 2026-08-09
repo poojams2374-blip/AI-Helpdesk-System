@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+
+        <h2>AI Helpdesk</h2>
+
+        <ul>
+
+    <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+    <li><a href="raise-ticket.html">🎫 Raise Ticket</a></li>
+
+    <li><a href="dashboard.html">📄 My Tickets</a></li>
+
+    <li><a href="profile.html">👤 Profile</a></li>
+
+    <li><a href="index.html">🚪 Logout</a></li>
+
+</ul>
+
+
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="navbar">
+
+           <h2>Dashboard</h2>
+
+           <div class="notification-wrapper">
+
+             <div class="notification-bell" id="notificationBell">
+                🔔
+                <span id="notificationCount">3</span>
+            </div>
+
+            <span>Welcome User</span>
+
+            <div class="notification-panel" id="notificationPanel">
+                <h3>Notifications</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="cards">
+
+           <div class="card">
+              <h3>Total Tickets</h3>
+              <h1 id="totalTickets">0</h1>
+           </div>
+
+           <div class="card">
+              <h3>Open Tickets</h3>
+              <h1 id="openTickets">0</h1>
+            </div>
+
+            <div class="card">
+              <h3>Resolved</h3>
+              <h1 id="resolvedTickets">0</h1>
+            </div>
+
+        </div>
+
+     <div class="dashboard-bottom">
+
+    <div class="tickets-section">
+
+        <h2>My Tickets</h2>
+
+        <div id="ticketList"></div>
+
+    </div>
+
+    <div class="chart-section">
+
+        <h2>Ticket Statistics</h2>
+
+        <div class="chart-container">
+            <canvas id="ticketChart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/script.js"></script>
+<script type="module" src="js/notifications.js"></script>
+
+</body>
+</html>
+</body>
+
+</html>
